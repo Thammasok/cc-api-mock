@@ -1,5 +1,3 @@
-
-const _ = require('lodash');
 const postList = require('../mock/post-list.json');
 
 exports.List = function(req, res, next) {
@@ -18,13 +16,9 @@ exports.Detail = async function(req, res, next) {
 
 
   function getData(id) {
-    _.findIndex(postList["list"], function (p) {
-      if (p.id === id) {
-        return res.status(200).json(p);
-      } else {
-        return res.status(200).json({
-          msg: "Not Found"
-        });
+    postList["list"].map((value, index) => {
+      if (value.id === id) {
+        return res.status(200).json(value);
       }
     });
   }

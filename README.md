@@ -17,7 +17,6 @@ GET /product
 GET /product/:ID
 ```
 ###### Parameter:
-
     KEY           TYPE      EXAMPLE
     ID            string    PRO13
 ---

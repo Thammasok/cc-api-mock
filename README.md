@@ -8,15 +8,15 @@
     3. เมื่อกดปุ่มตรงด้านบนขวามือ จะเปลี่ยนการแสดงผลเป็น Grids หรือ Lists ได้
     4. เมื่อเอาเมาส์ไปชี้ตรงรายการสินค้า จะแสดงผล hOver ตามภาพ
     5. เมื่อคลิกตรงปุ่มจะไปเปิดหน้า Product detail
-![alt text](/ui/01.ChomCHOB-Example-Grids.png)
+![ภาพ 1. การแสดงผลแบบ Grids](/ui/01.ChomCHOB-Example-Grids.png)
 ภาพ 1. การแสดงผลแบบ Grids
-![alt text](/ui/02.ChomCHOB-Example-Lists.png)
+![ภาพ 2. การแสดงผลแบบ Lists](/ui/02.ChomCHOB-Example-Lists.png)
 ภาพ 2. การแสดงผลแบบ Lists
-![alt text](/ui/06.Product-lists-change-views.png)
+![ภาพ 3. ปุ่มเปลี่ยนการแสดงผลแบบ Grids หรือ Lists](/ui/06.Product-lists-change-views.png)
 ภาพ 3. ปุ่มเปลี่ยนการแสดงผลแบบ Grids หรือ Lists
-![alt text](/ui/03.ChomCHOB-Example-Grids-On-Hover)
+![ภาพ 4.1 เมื่อนำเมาส์มาวางบนรายการสินค้า (แบบ Grids)](/ui/03.ChomCHOB-Example-Grids-On-Hover)
 ภาพ 4.1 เมื่อนำเมาส์มาวางบนรายการสินค้า (แบบ Grids)
-![alt text](/ui/04.ChomCHOB-Example-Lists-On-Hover.png)
+![ภาพ 4.1   เมื่อนำเมาส์มาวางบนรายการสินค้า (แบบ Lists)](/ui/04.ChomCHOB-Example-Lists-On-Hover.png)
 ภาพ 4.1   เมื่อนำเมาส์มาวางบนรายการสินค้า (แบบ Lists) 
 
 ---
@@ -24,7 +24,7 @@
     รายละเอียดมีดังนี้
     1. หน้า Product detail จะแสดงผลรายละเอียดของสินค้า ตามภาพ
     2. จำนวนสินค้าสามารถกดเพิ่มได้
-![alt text](/ui/05.ChomCHOB-Example-Product-Detail.png)
+![ภาพ 5. หน้าแสดงรายละเอียดสินค้า](/ui/05.ChomCHOB-Example-Product-Detail.png)
 ภาพ 5. หน้าแสดงรายละเอียดสินค้า
 
 ---

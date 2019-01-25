@@ -9,21 +9,21 @@
     4. เมื่อเอาเมาส์ไปชี้ตรงรายการสินค้า จะแสดงผล hOver ตามภาพ
     5. เมื่อคลิกตรงปุ่มจะไปเปิดหน้า Product detail
 ![alt text](/ui/01.ChomCHOB-Example-Grids.png)
-<center>ภาพ 1. การแสดงผลแบบ Grids</center>
+ภาพ 1. การแสดงผลแบบ Grids
 ![alt text](/ui/02.ChomCHOB-Example-Lists.png)
-<center>ภาพ 2. การแสดงผลแบบ Lists</center>
+ภาพ 2. การแสดงผลแบบ Lists
 ![alt text](/ui/06.Product-lists-change-views.png)
-<center>ภาพ 3. ปุ่มเปลี่ยนการแสดงผลแบบ Grids หรือ Lists</center>
+ภาพ 3. ปุ่มเปลี่ยนการแสดงผลแบบ Grids หรือ Lists
 ![alt text](/ui/03.ChomCHOB-Example-Grids-On-Hover)
-<center>ภาพ 4.1 เมื่อนำเมาส์มาวางบนรายการสินค้า (แบบ Grids)</center>
+ภาพ 4.1 เมื่อนำเมาส์มาวางบนรายการสินค้า (แบบ Grids)
 ![alt text](/ui/04.ChomCHOB-Example-Lists-On-Hover.png)
-<center>ภาพ 4.1   เมื่อนำเมาส์มาวางบนรายการสินค้า (แบบ Lists)</center>
+ภาพ 4.1   เมื่อนำเมาส์มาวางบนรายการสินค้า (แบบ Lists) 
 ### 2. Product detail
     รายละเอียดมีดังนี้
     1. หน้า Product detail จะแสดงผลรายละเอียดของสินค้า ตามภาพ
     2. จำนวนสินค้าสามารถกดเพิ่มได้
 ![alt text](/ui/05.ChomCHOB-Example-Product-Detail.png)
-<center>ภาพ 5. หน้าแสดงรายละเอียดสินค้า</center>
+ภาพ 5. หน้าแสดงรายละเอียดสินค้า
 ### 3. Conditions
     กำหนดให้มีการใช้งานเครื่องมือต่อไปนี้ 
     1. ReactJS, React-router, Redux

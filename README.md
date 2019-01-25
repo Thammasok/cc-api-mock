@@ -49,7 +49,6 @@ GET /product/:ID
 ###### Parameter:
     KEY           TYPE      EXAMPLE
     ID            string    PRO13
----
 
 ---
 ### 4. Conditions
@@ -61,6 +60,6 @@ GET /product/:ID
 
 ---
 ### ช่องทางการส่งงาน
-ส่งงานโดยการอัพโหลดงานขึ้น Github และส่ง Link ของ Project นั้นมายัง
-อีเมล์ chomchobth@chomchob.com
+ส่งงานโดยการอัพโหลดงานขึ้น Github และส่ง Link ของ Project นั้นมายัง\
+อีเมล์ chomchobth@chomchob.com\
 หัวข้อ ส่งแบบทดสอบ Front-end

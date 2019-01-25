@@ -18,20 +18,17 @@
 ภาพ 4.1 เมื่อนำเมาส์มาวางบนรายการสินค้า (แบบ Grids)
 ![alt text](/ui/04.ChomCHOB-Example-Lists-On-Hover.png)
 ภาพ 4.1   เมื่อนำเมาส์มาวางบนรายการสินค้า (แบบ Lists) 
+
+---
 ### 2. Product detail
     รายละเอียดมีดังนี้
     1. หน้า Product detail จะแสดงผลรายละเอียดของสินค้า ตามภาพ
     2. จำนวนสินค้าสามารถกดเพิ่มได้
 ![alt text](/ui/05.ChomCHOB-Example-Product-Detail.png)
 ภาพ 5. หน้าแสดงรายละเอียดสินค้า
-### 3. Conditions
-    กำหนดให้มีการใช้งานเครื่องมือต่อไปนี้ 
-    1. ReactJS, React-router, Redux
-    2. สามารถใช้ Css Frameworks (Bulma, Boostrap, etc.) หรือเขียน Css เองทั้งหมดก็ได้
-    3. สามารถใช้ Sass/Less ได้
-    4. ระยะเวลาในการทำ 5 วัน
+
 ---
-### 4. API Service
+### 3. API Service
 ##### URL
 This is base url for call service
 ```
@@ -55,7 +52,15 @@ GET /product/:ID
 ---
 
 ---
+### 4. Conditions
+    กำหนดให้มีการใช้งานเครื่องมือต่อไปนี้ 
+    1. ReactJS, React-router, Redux
+    2. สามารถใช้ Css Frameworks (Bulma, Boostrap, etc.) หรือเขียน Css เองทั้งหมดก็ได้
+    3. สามารถใช้ Sass/Less ได้
+    4. ระยะเวลาในการทำ 5 วัน
+
+---
 ### ช่องทางการส่งงาน
 ส่งงานโดยการอัพโหลดงานขึ้น Github และส่ง Link ของ Project นั้นมายัง
-อีเมล์ Jaranchai.nt@gmail.com
+อีเมล์ chomchobth@chomchob.com
 หัวข้อ ส่งแบบทดสอบ Front-end

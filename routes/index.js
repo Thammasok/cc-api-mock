@@ -5,5 +5,6 @@ const HomeController = require('../controller/home');
 
 /* GET home page. */
 router.get('/', HomeController.Index);
+router.get('/tqm', HomeController.TestTQM)
 
 module.exports = router;

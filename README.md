@@ -14,7 +14,7 @@
 ภาพ 2. การแสดงผลแบบ Lists
 ![ภาพ 3. ปุ่มเปลี่ยนการแสดงผลแบบ Grids หรือ Lists](/ui/06.Product-lists-change-views.png)
 ภาพ 3. ปุ่มเปลี่ยนการแสดงผลแบบ Grids หรือ Lists
-![ภาพ 4.1 เมื่อนำเมาส์มาวางบนรายการสินค้า (แบบ Grids)](/ui/03.ChomCHOB-Example-Grids-On-Hover)
+![ภาพ 4.1 เมื่อนำเมาส์มาวางบนรายการสินค้า (แบบ Grids)](/ui/03.ChomCHOB-Example-Grids-On-Hover.png)
 ภาพ 4.1 เมื่อนำเมาส์มาวางบนรายการสินค้า (แบบ Grids)
 ![ภาพ 4.1   เมื่อนำเมาส์มาวางบนรายการสินค้า (แบบ Lists)](/ui/04.ChomCHOB-Example-Lists-On-Hover.png)
 ภาพ 4.1   เมื่อนำเมาส์มาวางบนรายการสินค้า (แบบ Lists) 

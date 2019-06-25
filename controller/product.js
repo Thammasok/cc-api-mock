@@ -1,25 +1,24 @@
-const postList = require('../mock/post-list.json');
+const postList = require('../mock/post-list.json')
 
-exports.List = function(req, res, next) {
-  return res.status(200).json(postList);
+exports.List = function (req, res, next) {
+  return res.status(200).json(postList)
 }
 
-exports.Detail = async function(req, res, next) {
-  req.assert("id", "product id cannot be empty.").notEmpty();
+exports.Detail = async function (req, res, next) {
+  req.assert('id', 'product id cannot be empty.').notEmpty()
 
-  let errors = req.validationErrors();
+  let errors = req.validationErrors()
   if (errors) {
-    return res.status(400).json(errors);
+    return res.status(400).json(errors)
   } else {
-    await getData(req.params.id);
+    await getData(req.params.id)
   }
 
-
-  function getData(id) {
-    postList["list"].map((value, index) => {
+  function getData (id) {
+    postList['list'].map((value, index) => {
       if (value.id === id) {
-        return res.status(200).json(value);
+        return res.status(200).json(value)
       }
-    });
+    })
   }
 }

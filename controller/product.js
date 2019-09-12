@@ -1,24 +1,44 @@
-const postList = require('../mock/post-list.json')
+const { validationResult } = require('express-validator')
 
-exports.List = function (req, res, next) {
-  return res.status(200).json(postList)
+const ProductModel = require('../models/product')
+
+const createProduct = (req, res) => {
+  const errors = validationResult(req)
+  if (!errors.isEmpty()) return res.status(403).json({ errors: errors.array() })
+
+  ProductModel.create([{
+    name: req.body.name,
+    image_url: req.body.image_url,
+    description: req.body.description,
+    price: req.body.price,
+    brand_info: req.body.brand_info
+  }], (err) => {
+    if (err) return res.status(403).json({ msg: 'Create new product failed', err })
+
+    return res.json({
+      msg: `create new ${req.body.name} successed.`
+    })
+  })
 }
 
-exports.Detail = async function (req, res, next) {
-  req.assert('id', 'product id cannot be empty.').notEmpty()
+const productLists = (req, res) => {
+  ProductModel.find({}, (err, products) => {
+    if (err) return res.status(403).json(err)
 
-  let errors = req.validationErrors()
-  if (errors) {
-    return res.status(400).json(errors)
-  } else {
-    await getData(req.params.id)
-  }
+    return res.json(products)
+  })
+}
 
-  function getData (id) {
-    postList['list'].map((value, index) => {
-      if (value.id === id) {
-        return res.status(200).json(value)
-      }
-    })
-  }
+const productDetail = async function (req, res) {
+  ProductModel.findById(req.params.id, (err, product) => {
+    if (err) return res.status(403).json(err)
+
+    return res.json(product)
+  })
+}
+
+module.exports = {
+  createProduct,
+  productLists,
+  productDetail
 }

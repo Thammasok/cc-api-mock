@@ -1,39 +1,44 @@
-var express = require('express')
-// var path = require('path')
-// var favicon = require('serve-favicon');
-const expressValidator = require('express-validator')
-var logger = require('morgan')
-var cookieParser = require('cookie-parser')
-var bodyParser = require('body-parser')
+const express = require('express')
+const fs = require('fs')
+const logger = require('morgan')
+const cookieParser = require('cookie-parser')
+const bodyParser = require('body-parser')
+const cors = require('cors')
+const mongoose = require('mongoose')
 
-var index = require('./routes/index')
-var products = require('./routes/products')
+require('dotenv').config()
 
-var app = express()
+const app = express()
 
-// view engine setup
-// app.set('views', path.join(__dirname, 'views'));
-// app.set('view engine', 'pug');
-
-// uncomment after placing your favicon in /public
-// app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
-app.use(expressValidator())
 app.use(cookieParser())
-// app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(function (req, res, next) {
-  res.setHeader('Access-Control-Allow-Origin', '*')
-  res.setHeader('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept, Authorization')
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE')
-  // console.log(req)
-  next()
+app.use(cors())
+
+// connect mongodb
+mongoose.set('useFindAndModify', false)
+
+const url = `mongodb+srv://${process.env.MONGO_USERNAME}:${process.env.MONGO_PASSWORD}@cluster0-phsdq.gcp.mongodb.net/${process.env.MONGO_NAME}?retryWrites=true`
+const opts = { useNewUrlParser: true, useUnifiedTopology: true }
+
+mongoose.connect(url, opts)
+mongoose.connection.once('open', () => {
+  console.log('connected to database: ', process.env.MONGO_NAME)
 })
 
-app.use('/', index)
-app.use('/product', products)
+const files = fs.readdirSync('./routes')
+for (const i in files) {
+  const routeName = require('./routes/' + files[i])
+  const fileName = files[i].replace(/\.[^/.]+$/, '')
+
+  if (fileName === 'index') {
+    app.use('/', routeName)
+  } else {
+    app.use(`/${fileName}`, routeName)
+  }
+}
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

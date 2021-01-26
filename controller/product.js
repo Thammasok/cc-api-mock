@@ -23,15 +23,7 @@ const createProduct = (req, res) => {
 }
 
 const productLists = (req, res) => {
-  // ProductModel.find({}, (err, products) => {
-  //   if (err) return res.status(403).json(err)
-
-  //   return res.json(products)
-  // })
-
-  var query = ProductModel.find({}).select('_id', 'name', 'image_url', 'price', 'review', 'brand')
-
-  query.exec(function (err, products) {
+  ProductModel.find({}, (err, products) => {
     if (err) return res.status(403).json(err)
 
     return res.json(products)

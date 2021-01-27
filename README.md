@@ -1,13 +1,12 @@
 ### Front-end quiz
-By developing these pages according to the UI design provided [Click here](https://www.figma.com/file/6CG9ZT4sboHLLwN7Zq3Mhb/Interview-Front-end?node-id=1%3A2)
+Develop based on the UI design.  [Click here](https://www.figma.com/file/6CG9ZT4sboHLLwN7Zq3Mhb/Interview-Front-end?node-id=1%3A2)
 
 ---
-### 1. Resource
-Development 3 pages:
+### 1. About
+Let you develop 3 pages:
 1. Product lists 
 2. Product detail
 3. Cart
-
 
 ---
 ### 2. Resource

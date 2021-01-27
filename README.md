@@ -21,11 +21,9 @@ https://cc-mock-api.herokuapp.com
 ```
 
 ##### Product List
-you can call product lists
 ```
 GET /product
 ```
----
 
 ##### Product Detail
 ```

@@ -4,11 +4,11 @@ exports.Index = function (req, res, next) {
     description: 'This is mock API service for skill test of the front-end developer',
     company_info: {
       company_name: 'Chomchob Group Co.,Ltd.',
-      address: '69/6 Tang Hua Pug Building (9th Floor) alley Sathon10, Nort Sathon Road, Silom, Bang Rak, Bangkok 10500',
+      address: '98 Sathorn Square Building 16th Floor, 1605-1606 North Sathorn Rd., Silom, Bang Rak, Bangkok 10500',
       website: 'https://www.chomchob.com',
-      tel: '(+66)2-6350334',
-      mail: 'customer@chomchob.com',
-      line_id: '@chomchobth'
+      // tel: '(+66)2-6350334',
+      // mail: 'people@chomchob.com',
+      // line_id: '@chomchobth'
     }
   })
 }
